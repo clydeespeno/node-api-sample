@@ -1,7 +1,7 @@
-import chai from "chai";
+import {should} from "chai";
 import * as mathService from "./math.service";
 
-chai.should();
+should();
 
 describe("math.sum", () => {
 

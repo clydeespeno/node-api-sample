@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "quiet": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "experimentalObjectRestSpread": true,
+    "modules": true
+  },
+  "plugins": [
+    "promise"
+  ],
+  "globals": {
+    "bootstrapData": false,
+    "mixpanel": false,
+    "expect": false,
+    "should": false,
+    "sinon": false
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "rules": {
+    "promise/always-return": 0,
+    "no-console": 0,
+    "no-var": "error"
+  }
+}

@@ -1,0 +1,15 @@
+dist/*
+node_modules/*
+
+# ide
+*/log/
+*/.DS_Store
+.DS_Store
+.project
+.idea/
+
+#express
+configuration/local.json
+node_modules/*
+dist/*
+npm-debug.log

@@ -35,27 +35,16 @@
   "devDependencies": {
     "chai": "3.5.0",
     "cors": "2.7.1",
-    "isparta-loader": "2.0.0",
-    "karma": "0.13.22",
-    "karma-chai": "0.1.0",
-    "karma-coverage": "0.5.5",
-    "karma-mocha": "0.2.1",
-    "karma-phantomjs-launcher": "1.0.0",
-    "karma-sourcemap-loader": "0.3.7",
-    "karma-webpack": "1.7.0",
     "mocha": "2.5.3",
-    "phantomjs-prebuilt": "2.1.7",
-    "pm2": "2.0.18",
     "sinon": "2.0.0-pre.2",
-    "sinon-chai": "2.8.0",
-    "webpack": "1.12.12"
+    "sinon-chai": "2.8.0"
   },
   "scripts": {
     "lint": "eslint -c .eslintrc ./**/*.js",
     "build": "babel src -d dist",
     "watch": "npm run lint && babel-watch src/app.js --watch ./configuration",
     "start": "npm run lint && npm run build && node dist/app.js",
-    "test": "./node_modules/karma/bin/karma start ./karma.conf.js --single-run=false",
+    "test": "mocha --compilers js:babel-core/register ./src/**/*spec.js",
     "test:single": "./node_modules/karma/bin/karma start ./karma.conf.js --single-run=true"
   }
 }

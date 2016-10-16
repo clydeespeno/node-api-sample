@@ -3,6 +3,7 @@ import cors from "cors";
 import {logErrors} from "./errorhandler";
 import config from "./config";
 import mockRoute from "./mock/mock.route";
+import mathRoute from "./math/math.route";
 
 const middleware = express();
 
@@ -13,6 +14,8 @@ middleware.use(cors());
 if (config.get("mock:isEnabled")) {
   middleware.use("/", mockRoute);
 }
+
+middleware.use("/math", mathRoute);
 
 middleware.get("/", (req, res) => {
   res.send({hello: "World!"})

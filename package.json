@@ -50,7 +50,7 @@
   "scripts": {
     "lint": "eslint -c .eslintrc ./**/*.js",
     "build": "babel src -d dist",
-    "watch": "npm run lint && babel-watch src/app.js -L --watch ../application/views --watch ./configuration",
+    "watch": "npm run lint && babel-watch src/app.js --watch ./configuration",
     "start": "npm run lint && npm run build && node dist/app.js",
     "test": "./node_modules/karma/bin/karma start ./karma.conf.js --single-run=false",
     "test:single": "./node_modules/karma/bin/karma start ./karma.conf.js --single-run=true"

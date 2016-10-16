@@ -22,6 +22,8 @@
     "eslint": "3.4.0",
     "eslint-plugin-promise": "1.0.8",
     "express": "4.14.0",
+    "glob": "7.1.0",
+    "hjson": "2.1.0",
     "lodash": "4.16.2",
     "mkdirp": "0.5.1",
     "moment": "2.15.1",
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
+    "cors": "2.7.1",
     "isparta-loader": "2.0.0",
     "karma": "0.13.22",
     "karma-chai": "0.1.0",

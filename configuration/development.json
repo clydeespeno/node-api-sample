@@ -1,3 +1,6 @@
 {
-  "environment": "development"
+  "mock": {
+    "isEnabled": true,
+    "mockResourcePath": "./.mockresources"
+  }
 }

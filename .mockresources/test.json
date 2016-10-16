@@ -1,0 +1,16 @@
+{
+  "get": {
+    "/products": {
+      "status": 200,
+      "response": "test",
+      "headers": {}
+    }
+  },
+  "post": {
+    "/products": {
+      "status": 400,
+      "response": "test",
+      "headers": {}
+    }
+  }
+}
